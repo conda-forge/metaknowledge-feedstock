@@ -10,7 +10,7 @@ source:
   sha256: f137dce7ed7e1fb3a73730716d37e2b5757d9fc94f3bb50f8e82338c38b17dae
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py2k]
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   entry_points:
@@ -26,7 +26,7 @@ requirements:
     - python
     - networkx >=2.0
     - pyreadline  # [win]
-    - matplotlib
+    - matplotlib-base
     - scipy
     - numpy
 
