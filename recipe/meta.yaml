@@ -1,5 +1,5 @@
 {% set name = "metaknowledge" %}
-{% set version = "3.3.3.2" %}
+{% set version = "3.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0bdd5fa6e96aee866c9607622157c41a3933db00e5341ba319226dc96698f8fa
+  sha256: 6adcc028b71488c946dbde80711ec6a8b0ba21f8673d5dad7e8739f1301fbdf2
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
